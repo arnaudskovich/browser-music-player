@@ -157,7 +157,7 @@ function createItem({ title, artist, year, id, pictureDataUrl }) {
 							<span class="item_artist">
 								<i class="fa fa-user"></i> ${artist}
 							</span>
-							<span class="item_duration">
+							<span class="item_year">
 								<i class="fa fa-calendar"></i>
 								${year}
 							</span>

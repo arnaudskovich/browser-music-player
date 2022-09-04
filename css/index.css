@@ -224,11 +224,15 @@ body {
     max-height: 10px !important;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
     background-color: rgb(255, 255, 255);
     box-shadow: -1px 1px 100px 5px rgba(38, 37, 39, 0.068);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.item:hover {
+    grid-template-columns: 1fr auto;
 }
 
 .item_main {
@@ -258,8 +262,17 @@ body {
     font-weight: bold;
 }
 
+.item_artist {
+    display: inline;
+    font-size: small;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 .item_extra {
     display: grid;
+    column-gap: 10px;
     grid-template-columns: 1fr auto;
     font-size: 16px;
     font-weight: lighter;
