@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/all.min.js"></script>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <script src="./js/jsmediatags.js"></script>
+    <script src="./js/index.js" type="text/javascript" defer></script>
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div id="player" class="">
+        <div id="cover"></div>
+        <div id="infos">
+            <div class="title" id="title">Aucun titre</div>
+            <div class="artist">
+                <i class="fa fa-user"></i><span class="artistName" id="artistName">Aucun artiste</span>
+            </div>
+            <div class="album">
+                <i class="fa fa-dot-circle"></i><span class="albumName" id="albumName">Aucun album</span>
+            </div>
+        </div>
+        <div id="progress">
+            <div id="now">0:00</div>
+            <input type="range" name="timer" id="timer" value="0" max="10000">
+            <div id="duration">0:00</div>
+        </div>
+        <div id="actions">
+            <button class="btn" id="list"><i class="fa fa-list-squares"></i></button>
+            <button class="btn" id="prev"><i class="fa fa-fast-backward"></i></button>
+            <button class="btn" id="play"><i class="fa fa-play"></i></button>
+            <button class="btn" id="next"><i class="fa fa-fast-forward"></i></button>
+            <button class="btn" id="repeat"><i class="fa fa-left-right"></i></button>
+        </div>
+    </div>
+    <div class="hidden" id="playlist">
+        <div class="items" id="items">
+
+        </div>
+        <div class="list-footer">
+            <button id="closeList" class="btn">
+                <i class="fa fa-close"></i>
+            </button>
+            <button class="btn" id="select-file">
+                <i class="fa fa-file-circle-plus"></i>
+            </button>
+        </div>
+    </div>
+</body>
+<input type="file" name="filePicker" id="filePicker" multiple accept=".mp3">
+
+</html>
